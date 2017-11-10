@@ -392,7 +392,8 @@ th {
     color: #f9f9f9; }
   .header .menu {
     font-size: 2em;
-    float: right;
+    right: 30px;
+    position: fixed;
     margin: 25px; }
   .header .header-text {
     text-align: center;
