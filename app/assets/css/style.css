@@ -419,6 +419,8 @@ th {
     width: 100%; }
   .main .section-title {
     margin-bottom: 0px; }
+  .main p {
+    margin-bottom: 0px; }
   .main .text {
     padding: 50px; }
   .main .about-image {
