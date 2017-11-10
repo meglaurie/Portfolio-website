@@ -12,14 +12,19 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
+h1,
+h2,
+h3 {
+  margin: 0px; }
+
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
-  transition: all .4s .3s ease-in; }
+  transition: all .4s .3s ease-in;
+  font-family: 'Special Elite', sans-serif; }
 
 body, html {
   min-height: 100vh;
-  overflow: hidden; }
+  overflow: scroll; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -390,10 +395,9 @@ th {
     float: right;
     margin: 25px; }
   .header .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center; }
+    text-align: center;
+    width: 40%;
+    margin: 0 auto; }
   .header .logo {
     position: absolute;
     top: 5%;
@@ -409,6 +413,16 @@ th {
   height: 400px;
   width: 100%;
   background: grey; }
+
+.main .container {
+  width: 100%; }
+
+.main .text {
+  padding: 50px; }
+
+.main .about-image {
+  background-color: black;
+  height: 300px; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -436,6 +450,18 @@ th {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 100% !important; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100% !important; } }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important; } }
 
 @media print {
   * {

@@ -1,8 +1,17 @@
 .main {
-
   .content-box{
     height:400px;
     width:100%;
     background: grey;
+  }
+  .container{
+    width: 100%;
+  }
+  .text{
+    padding: 50px;
+  }
+  .about-image{
+    background-color: black;
+    height:300px;
   }
 }
