@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  height:100vh;
+  color:$textcolor;
+  // background-color: grey;
+  background-image: url('../img/headerImage.jpg');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+    .menu{
+      font-size: 2em;
+      float: right;
+      margin: 15px;
+     }
+    .header-text{
+      @include position(absolute, 50% 0 0 50%);
+      text-align: center;
+    }
+    .logo {
+      // margin: -58px 0 0 -100px;
+      @include position(absolute, 5% 0 0 5%);
+      img {
+
+      }
+      a{
+        color:$textcolor;
+      }
+    }
+
+}
