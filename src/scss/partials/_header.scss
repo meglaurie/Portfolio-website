@@ -9,11 +9,13 @@
      -moz-background-size:cover;
        -o-background-size:cover;
           background-size:cover;
-
+    a{
+      color:$textcolor;
+    }
     .menu{
       font-size: 2em;
       float: right;
-      margin: 15px;
+      margin: 25px;
      }
     .header-text{
       @include position(absolute, 50% 0 0 50%);
@@ -25,9 +27,7 @@
       img {
 
       }
-      a{
-        color:$textcolor;
-      }
+
     }
 
 }

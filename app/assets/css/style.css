@@ -383,10 +383,12 @@ th {
   background-image: url("../img/headerImage.jpg");
   background-position: 50% 50%;
   background-size: cover; }
+  .header a {
+    color: #f9f9f9; }
   .header .menu {
     font-size: 2em;
     float: right;
-    margin: 15px; }
+    margin: 25px; }
   .header .header-text {
     position: absolute;
     top: 50%;
@@ -396,8 +398,6 @@ th {
     position: absolute;
     top: 5%;
     left: 5%; }
-    .header .logo a {
-      color: #f9f9f9; }
 
 .nav {
   height: 75px; }
@@ -405,7 +405,9 @@ th {
     list-style: none;
     margin: 0px; }
 
-.main {
+.main .content-box {
+  height: 400px;
+  width: 100%;
   background: grey; }
 
 @font-face {
