@@ -394,10 +394,7 @@ th {
   width: 100%;
   height: 100vh;
   color: #f9f9f9;
-  font-family: "Special Elite", sans-serif;
-  background-image: url("../img/headerImage.jpg");
-  background-position: 50% 50%;
-  background-size: cover; }
+  font-family: "Special Elite", sans-serif; }
   .header a {
     color: #f9f9f9; }
   .header .menu {
@@ -411,8 +408,95 @@ th {
     width: 40%;
     margin: 0 auto; }
 
+.rw-wrapper {
+  width: 80%;
+  position: relative;
+  padding: 10px;
+  display: inline-block; }
+
+.rw-sentence {
+  margin: 0;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); }
+
+.rw-sentence span {
+  font-size: 200%;
+  font-weight: normal; }
+
+.rw-words {
+  display: inline;
+  font-size: 20em; }
+
+.rw-words-1 span {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  overflow: hidden;
+  animation: rotateWord 18s linear infinite 0s; }
+
+.rw-words-1 span:nth-child(2) {
+  animation-delay: 3s; }
+
+.rw-words-1 span:nth-child(3) {
+  animation-delay: 6s; }
+
+.rw-words-1 span:nth-child(4) {
+  animation-delay: 9s; }
+
+.rw-words-1 span:nth-child(5) {
+  animation-delay: 12s; }
+
+.rw-words-1 span:nth-child(6) {
+  animation-delay: 15s; }
+
+.rw-words-1 span:nth-child(7) {
+  animation-delay: 18s; }
+
+@keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@media screen and (min-width: 900px) {
+  .rw-sentence {
+    font-size: 35px; }
+  .rw-words {
+    font-size: 35px; } }
+
+@media screen and (max-width: 900px) {
+  .rw-sentence {
+    font-size: 35px; }
+  .rw-words {
+    font-size: 35px; } }
+
+@media screen and (max-width: 520px) {
+  .rw-sentence {
+    font-size: 25px; }
+  .rw-words {
+    font-size: 25px; } }
+
+@media screen and (max-width: 480px) {
+  .rw-sentence {
+    font-size: 20px; }
+  .rw-words {
+    font-size: 20px; } }
+
 .parallax-window {
-  height: 95vh;
+  height: 100vh;
   min-height: 75vh; }
   .parallax-window h1 {
     font-family: "Special Elite", sans-serif; }
@@ -421,23 +505,31 @@ th {
     float: left; }
   .parallax-window .header-title {
     font-size: 45px;
-    padding-left: 100px;
-    padding-top: 100px; }
+    padding-top: 50px;
+    text-align: center; }
   .parallax-window .header-subtitle {
-    padding-top: 0px;
-    padding: 25px;
-    padding-left: 100px; }
+    width: 100%;
+    margin: 25px;
+    padding-left: 10%; }
   .parallax-window .header-text {
     font-size: 16px;
-    width: 50%;
-    padding-left: 100px; }
+    width: 100%;
+    padding: 25px;
+    padding-left: 16%; }
+  .parallax-window .social-media {
+    width: 100%;
+    padding-left: 16%;
+    padding-top: 25px;
+    font-size: 25px; }
+    .parallax-window .social-media a {
+      color: #444;
+      padding: 15px; }
 
 .parallax-window::after {
-  min-height: 95vh;
+  min-height: 100vh;
   display: block;
   position: relative;
   margin-top: -150px;
-  height: 150px;
   width: 100%; }
 
 .secondary-parallax {
@@ -523,8 +615,41 @@ th {
 .slideout-open .slideout-menu {
   display: block; }
 
+.main-container {
+  width: 60%; }
+
 .secondary-parallax {
   max-height: 100vh; }
+
+.col-lg-8 {
+  margin-right: -30px; }
+
+.sub-section {
+  padding: 25px;
+  text-align: center;
+  background: grey;
+  height: 33.3vh;
+  width: 100%; }
+
+.skills {
+  background: lightgrey; }
+
+.content {
+  background: grey; }
+
+.work {
+  background: whitesmoke; }
+
+footer {
+  background: none; }
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
+  margin: 0px;
+  margin-bottom: -10px;
+  margin-left: 30%; }
 
 @font-face {
   font-family: 'Font-Name';

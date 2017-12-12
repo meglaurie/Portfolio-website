@@ -2,6 +2,33 @@
 
 
 }
+
+.main-container{
+  width: 60%;
+  // margin: 0 auto;
+}
 .secondary-parallax{
   max-height: 100vh;
+}
+
+.col-lg-8{
+  margin-right: -30px;
+}
+
+.sub-section{
+  padding: 25px;
+  text-align: center;
+  background: grey;
+  height: 33.3vh;
+  width: 100%;
+}
+
+.skills{
+  background: lightgrey;
+}
+.content{
+  background: grey;
+}
+.work{
+  background: whitesmoke;
 }
