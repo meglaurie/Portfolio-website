@@ -28,7 +28,8 @@ h2,
 h3 {
   margin: 0px; }
 
-.col-lg-4 {
+.col-lg-3,
+.col-lg-9 {
   padding: 0px !important; }
 
 body, html {
@@ -412,7 +413,7 @@ th {
     margin: 0 auto; }
 
 .rw-wrapper {
-  width: 80%;
+  width: 90%;
   position: relative;
   padding: 10px;
   display: inline-block; }
@@ -422,12 +423,10 @@ th {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); }
 
 .rw-sentence span {
-  font-size: 200%;
   font-weight: normal; }
 
 .rw-words {
-  display: inline;
-  font-size: 20em; }
+  display: inline; }
 
 .rw-words-1 span {
   position: absolute;
@@ -482,9 +481,9 @@ th {
 
 @media screen and (max-width: 900px) {
   .rw-sentence {
-    font-size: 35px; }
+    font-size: 30px; }
   .rw-words {
-    font-size: 35px; } }
+    font-size: 30px; } }
 
 @media screen and (max-width: 520px) {
   .rw-sentence {
@@ -499,8 +498,7 @@ th {
     font-size: 20px; } }
 
 .parallax-window {
-  height: 100vh;
-  min-height: 75vh; }
+  height: 100vh; }
   .parallax-window h1 {
     font-family: "Special Elite", sans-serif; }
   .parallax-window .logo {
@@ -508,7 +506,7 @@ th {
     float: left; }
   .parallax-window .header-title {
     font-size: 45px;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center; }
   .parallax-window .header-subtitle {
     width: 100%;
@@ -529,14 +527,13 @@ th {
       padding: 15px; }
 
 .parallax-window::after {
-  min-height: 100vh;
   display: block;
   position: relative;
   margin-top: -150px;
   width: 100%; }
 
 .secondary-parallax {
-  min-height: 40vh; }
+  height: 30vh !important; }
 
 .nav {
   height: 75px; }
@@ -619,7 +616,8 @@ th {
   display: block; }
 
 .main-container {
-  width: 60%; }
+  width: 60%;
+  padding-left: 80px; }
 
 .secondary-parallax {
   max-height: 100vh; }
@@ -641,6 +639,44 @@ th {
 
 .work {
   background: whitesmoke; }
+
+.about-main {
+  padding: 50px; }
+
+.circle-container {
+  width: 100%; }
+
+.circle-pic {
+  height: 200px;
+  width: 200px;
+  background: pink;
+  border-radius: 150px;
+  margin: 0 auto; }
+
+.about-txt {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 25px; }
+
+.social-media-about {
+  padding-left: 43%; }
+  .social-media-about a {
+    color: #444;
+    padding: 15px;
+    font-size: 16px; }
+
+.work-main {
+  padding: 100px;
+  overflow: hidden; }
+
+.work-box {
+  background: lightgrey;
+  height: 200px;
+  text-align: center; }
+
+.formdiv {
+  margin-left: 50%; }
 
 footer {
   background: none; }

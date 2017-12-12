@@ -38,7 +38,7 @@
 }
 
 .rw-wrapper{
-  width: 80%;
+  width: 90%;
   position: relative;
   padding: 10px;
   display: inline-block;
@@ -49,13 +49,10 @@
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .rw-sentence span{
-  font-size: 200%;
   font-weight: normal;
 }
 .rw-words{
-
   display: inline;
-  font-size: 20em;
 }
 .rw-words-1 span{
   position: absolute;
@@ -135,8 +132,8 @@
   .rw-words{font-size: 35px;}
 }
 @media screen and (max-width: 900px){
-  .rw-sentence { font-size: 35px; }
-  .rw-words{font-size: 35px;}
+  .rw-sentence { font-size: 30px; }
+  .rw-words{font-size: 30px;}
 }
 
 @media screen and (max-width: 520px){
@@ -151,7 +148,7 @@
 
 .parallax-window {
   height: 100vh;
-  min-height: 75vh;
+  // min-height: 75vh;
 
   h1{
     font-family: $font1;
@@ -174,7 +171,7 @@
 .header-title{
   font-size: 45px;
   // padding-left: 100px;
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: center;
 
 }
@@ -209,7 +206,7 @@
 
 }
 .parallax-window::after {
-  min-height: 100vh;
+  // min-height: 100vh;
   display: block;
   position: relative;
   // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #444 100%);
@@ -221,5 +218,5 @@
 }
 
 .secondary-parallax{
-  min-height: 40vh;
+  height: 30vh !important;
 }
