@@ -631,7 +631,7 @@ th {
   text-align: center;
   background: grey;
   height: 33.3vh;
-  width: 100%; }
+  width: 104%; }
 
 .skills {
   background: lightgrey; }
@@ -744,7 +744,7 @@ footer {
 
 figure.effect-lily img {
   max-width: none;
-  width: calc(100% + 50px);
+  width: calc(100% + 75px);
   height: 33.3vh;
   opacity: 0.7;
   transition: opacity 0.35s, transform 0.35s;
@@ -762,13 +762,13 @@ figure.effect-lily figcaption > div {
 
 figure.effect-lily h2,
 figure.effect-lily p {
+  color: #444;
   transform: translate3d(0, 40px, 0); }
 
 figure.effect-lily h2 {
   transition: transform 0.35s; }
 
 figure.effect-lily p {
-  color: rgba(255, 255, 255, 0.8);
   opacity: 0;
   transition: opacity 0.2s, transform 0.35s; }
 
