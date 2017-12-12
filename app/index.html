@@ -10,12 +10,16 @@
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap-push-menu.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="assets/components/modernizr/modernizr.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96078574-1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="parallax.min.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments)};
@@ -25,76 +29,122 @@
     </script>
   </head>
   <body>
-
-    <header class="header" role="banner">
-      <nav class="nav" role="navigation">
-        <div class="logo">
-          <a href="/">
-            LOGO
-          </a>
-        </div>
-        <div class="menu">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-      </nav>
-      <div class="header-text">
-        <h1>The art challenges the technology, and the technology inspires the art.
-       -John Lasseter</h1>
+    <div class="container">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/headerImage.jpg">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li>
+            <a class="menu" href="/">Home</a>
+            <a class="menu" href="aboutUs.html">About</a>
+            <a class="menu" href="skills.html">Skills</a>
+            <a class="menu" href="work.html">Work</a>
+            <a class="menu" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
 
-    <main class="main" role="main">
-
-      <div class="content-box about container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 class="section-title">About</h2>
-            <p>Hello my name is Megan. I am a {flipping text}. I have a certificate in front-end web development from SAIT Polytechnic in Calgary, AB. I completed a 4 month internship at a global digital marketing agency where I did work for Nissan North America and City Bank. Now I am working as a contractor for a small company building UI's for a variety of projects and taking on freelance work.
-            </p>
+        <nav class="nav" role="navigation">
+          <div class="logo-box">
+            <a href="/">
+              <!-- <img class="logo"src="assets/img/logo.png" alt="Logo"> -->
+            </a>
           </div>
-          <div class="about-image col-sm-6"></div>
+          <ul>
+            <li>
+              <a class="mobile-menu" href="#" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+              <a class="menu" href="/">Home</a>
+              <a class="menu" href="aboutUs.html">About</a>
+              <a class="menu" href="skills.html">Skills</a>
+              <a class="menu" href="work.html">Work</a>
+              <a class="menu" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1 class="header-title">Megan Laurie</h1>
+        <h2 class="header-subtitle">Web Developer</h2>
+        <p class="header-text">Add content</p>
+
+    </div>
+
+    <main class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+
         </div>
       </div>
 
-      <div class="content-box skills">
-        <h2 class="section-title">Skills</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+  </main>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/headerImage.jpg">
 
-      <div class="content-box work container">
+    </div>
+    <section>
+      <div class="container-fluid">
         <div class="row">
-          <div class="project1 col-sm-4"></div>
-          <div class="project2 col-sm-8"></div>
-        </div>
-        <div class="row">
-          <div class="project3 col-sm-8"></div>
-          <div class="project4 col-sm-4"></div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+
         </div>
       </div>
+    </section>
+    <div class="parallax-window secondary-parallax" data-parallax="scroll" data-image-src="assets/img/headerImage.jpg">
 
-      <div class="content-box contact container">
+    </div>
+    <section>
+      <div class="container-fluid">
         <div class="row">
-          <div class="about-image col-sm-6"></div>
-          <div class="col-sm-6">
-            <h2 class="section-title">Contact</h2>
-            <ul>
-              <li><a href="#">GITHUB</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">BitBucket</a></li>
-            </ul>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+          <div class="col-md-4">
+            <h2>CONTENT</h2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="parallax-window secondary-parallax" data-parallax="scroll" data-image-src="assets/img/headerImage.jpg">
+
+    </div>
+      <footer class="footer" role="contentinfo">
+        <div class="footer-wrapper container-fluid">
+
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <div class="row">
+            <div class="footer col-lg-12">
+              Copyright Megan Laurie 2017<i class="fa fa-copyright" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
-      </div>
-
-    </main>
-
-    <aside class="sidebar" role="complementary">
-
-    </aside>
+    </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/components/jquery/parallax.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
+    <script type="text/javascript">
+      $('.parallax-window').parallax({imageSrc: 'img/headerImage.jpg'});
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -105,6 +155,13 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
 
-  </body>
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
 </html>

@@ -22,6 +22,7 @@
     "jshint": "^2.9.5"
   },
   "dependencies": {
-    "gulp-jslint": "^1.0.10"
+    "gulp-jslint": "^1.0.10",
+    "jquery.mhead": "^1.0.1"
   }
 }

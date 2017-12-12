@@ -19,6 +19,20 @@
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 
 }
+@media only screen and (max-width:1047px) {
+  .menu{
+    display: none;
+  }
+  .nav{
+    ul{
+      li {
+        .mobile-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 
 @media (min-width: 992px){

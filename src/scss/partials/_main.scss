@@ -1,39 +1,7 @@
 .main {
-  font-family: $font1;
-  .content-box{
-    width:100%;
-    background: grey;
-  }
-  .container{
-    width: 100%;
-  }
-  .section-title{
-    margin-bottom: 0px;
-  }
-  p{
-    margin-bottom: 0px;
-  }
-  .text{
-    padding: 50px;
-  }
-  .about-image{
-    background-color: $blue;
-    height:400px;
-  }
-  .project1{
-    background: $yellow;
-    height: 200px;
-  }
-  .project2{
-    background: $pink;
-    height: 200px;
-  }
-  .project3{
-    background: $pink;
-    height: 200px;
-  }
-  .project4{
-    background: $yellow;
-    height: 200px;
-  }
+
+
+}
+.secondary-parallax{
+  max-height: 100vh;
 }

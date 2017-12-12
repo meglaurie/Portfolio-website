@@ -12,18 +12,28 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
+html {
+  width: 100%; }
+
+body {
+  position: relative;
+  color: #444; }
+  body .container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px; }
+
 h1,
 h2,
 h3 {
   margin: 0px; }
 
-body {
-  color: #444;
-  transition: all .4s .3s ease-in; }
-
 body, html {
   min-height: 100vh;
   overflow: scroll; }
+
+.container {
+  padding: 0px; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -394,50 +404,127 @@ th {
     font-size: 2em;
     right: 30px;
     position: fixed;
-    margin: 25px; }
+    margin: 25px;
+    z-index: 99; }
   .header .header-text {
     text-align: center;
     width: 40%;
     margin: 0 auto; }
-  .header .logo {
-    position: absolute;
-    top: 5%;
-    left: 5%; }
+
+.parallax-window {
+  height: 95vh;
+  min-height: 75vh; }
+  .parallax-window h1 {
+    font-family: "Special Elite", sans-serif; }
+  .parallax-window .logo {
+    height: 70px;
+    float: left; }
+  .parallax-window .header-title {
+    font-size: 45px;
+    padding-left: 100px;
+    padding-top: 100px; }
+  .parallax-window .header-subtitle {
+    padding-top: 0px;
+    padding: 25px;
+    padding-left: 100px; }
+  .parallax-window .header-text {
+    font-size: 16px;
+    width: 50%;
+    padding-left: 100px; }
+
+.parallax-window::after {
+  min-height: 95vh;
+  display: block;
+  position: relative;
+  margin-top: -150px;
+  height: 150px;
+  width: 100%; }
+
+.secondary-parallax {
+  min-height: 40vh; }
 
 .nav {
   height: 75px; }
+  .nav .mobile-menu {
+    color: #444;
+    font-size: 2em;
+    margin-top: 25px; }
   .nav ul {
     list-style: none;
     margin: 0px; }
 
-.main {
-  font-family: "Special Elite", sans-serif; }
-  .main .content-box {
-    width: 100%;
-    background: grey; }
-  .main .container {
-    width: 100%; }
-  .main .section-title {
-    margin-bottom: 0px; }
-  .main p {
-    margin-bottom: 0px; }
-  .main .text {
-    padding: 50px; }
-  .main .about-image {
-    background-color: #4a9eca;
-    height: 400px; }
-  .main .project1 {
-    background: #e8d062;
-    height: 200px; }
-  .main .project2 {
-    background: #db827a;
-    height: 200px; }
-  .main .project3 {
-    background: #db827a;
-    height: 200px; }
-  .main .project4 {
-    background: #e8d062;
-    height: 200px; }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none; }
+
+.slideout-menu-left {
+  left: 0; }
+
+.slideout-menu-right {
+  right: 0; }
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF;
+  /* A background-color is required */
+  min-height: 100vh; }
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden; }
+
+.slideout-open .slideout-menu {
+  display: block; }
+
+.secondary-parallax {
+  max-height: 100vh; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -465,6 +552,12 @@ th {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+@media only screen and (max-width: 1047px) {
+  .menu {
+    display: none; }
+  .nav ul li .mobile-menu {
+    display: block; } }
 
 @media (min-width: 992px) {
   .container {
