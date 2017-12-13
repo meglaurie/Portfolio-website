@@ -937,9 +937,7 @@ form {
   overflow: hidden; }
 
 .work-box {
-  background: lightgrey;
-  height: 200px;
-  text-align: center; }
+  padding: 10px; }
 
 @media only screen and (max-width: 1047px) {
   .menu {
