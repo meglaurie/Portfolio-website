@@ -646,11 +646,12 @@ th {
   margin-left: 30%; }
 
 footer {
+  height: 100px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px; }
+  padding: 30px; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -788,26 +789,16 @@ figure.effect-lily:hover p {
   transition-duration: 0.35s; }
 
 form {
-  margin: 0 auto;
-  text-align: center; }
-
-.text-input {
-  margin: 25px auto; }
-
-.text-label {
-  text-align: center; }
-
-form {
   text-align: center;
   padding: 50px; }
 
 #submit {
-  color: #f2f2f2;
+  color: white;
   font-size: 20px;
   margin: 50px;
-  padding: 10px;
+  padding: 15px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background: pink;
   /* For browsers that do not support gradients */ }
 
@@ -915,7 +906,10 @@ form {
   width: 200px;
   background: pink;
   border-radius: 150px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-image: url("../img/photo.jpg");
+  background-position: 50% 50%;
+  background-size: cover; }
 
 .about-txt {
   width: 60%;
@@ -924,6 +918,10 @@ form {
   padding: 40px;
   text-align: justify; }
 
+.skills {
+  background: none;
+  margin-bottom: 50px; }
+
 .social-media-about ul {
   list-style: none;
   text-align: center; }
@@ -931,7 +929,8 @@ form {
 .social-media-about a {
   color: #444;
   padding: 15px;
-  font-size: 25px; }
+  font-size: 25px;
+  margin-top: 30px; }
 
 .work-main {
   padding: 100px;

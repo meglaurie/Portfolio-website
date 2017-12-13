@@ -11,6 +11,13 @@
   background: pink;
   border-radius: 150px;
   margin: 0 auto;
+  background-image: url('../img/photo.jpg');
+    background-position: 50% 50%;
+    -webkit-background-size:cover;
+       -moz-background-size:cover;
+         -o-background-size:cover;
+            background-size:cover;
+
 }
 
 .about-txt{
@@ -21,14 +28,20 @@
   text-align: justify;
 }
 
+.skills{
+  background: none;
+  margin-bottom: 50px;
+}
+
 .social-media-about{
   ul{
     list-style: none;
-    text-align: center
+    text-align: center;
   }
   a{
     color:#444;
     padding: 15px;
     font-size: 25px;
+    margin-top: 30px;
   }
 }
