@@ -788,6 +788,51 @@ figure.effect-lily:hover p {
   transition-delay: 0.05s;
   transition-duration: 0.35s; }
 
+figure.effect-lily2 img {
+  max-width: none;
+  width: calc(100% + 75px);
+  height: 33.3vh;
+  opacity: 0.3;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0); }
+
+figure.effect-lily2 figcaption {
+  text-align: center; }
+
+figure.effect-lily2 figcaption > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%; }
+
+figure.effect-lily2 h2,
+figure.effect-lily2 p {
+  color: pink;
+  transform: translate3d(0, 40px, 0); }
+
+figure.effect-lily2 h2 {
+  transition: transform 0.35s; }
+
+figure.effect-lily2 p {
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.35s; }
+
+figure.effect-lily2:hover img {
+  opacity: 1; }
+
+figure.effect-lily2:hover p {
+  opacity: 1; }
+
+figure.effect-lily2:hover img,
+figure.effect-lily2:hover h2,
+figure.effect-lily2:hover p {
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-lily2:hover p {
+  transition-delay: 0.05s;
+  transition-duration: 0.35s; }
+
 form {
   text-align: center;
   padding: 50px; }
