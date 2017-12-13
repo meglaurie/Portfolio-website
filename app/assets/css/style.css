@@ -505,8 +505,8 @@ th {
   .parallax-window .logo {
     height: 50px;
     float: left;
-    margin-top: 35px;
-    margin-left: 105px; }
+    margin-top: 10px;
+    margin-left: 100px; }
   .parallax-window .header-title {
     font-size: 45px;
     padding-top: 30px; }
@@ -535,11 +535,12 @@ th {
   height: 30vh !important; }
 
 .nav {
-  height: 75px; }
+  height: 75px;
+  padding: 25px; }
   .nav .mobile-menu {
     color: #444;
     font-size: 2em;
-    margin-top: 25px; }
+    padding-top: 25px; }
   .nav ul {
     list-style: none;
     margin: 0px; }
@@ -636,41 +637,6 @@ th {
 .work {
   background: whitesmoke; }
 
-.about-main {
-  padding: 50px; }
-
-.circle-container {
-  width: 100%; }
-
-.circle-pic {
-  height: 200px;
-  width: 200px;
-  background: pink;
-  border-radius: 150px;
-  margin: 0 auto; }
-
-.about-txt {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-  padding: 40px; }
-
-.social-media-about {
-  padding-left: 43%; }
-  .social-media-about a {
-    color: #444;
-    padding: 15px;
-    font-size: 20px; }
-
-.work-main {
-  padding: 100px;
-  overflow: hidden; }
-
-.work-box {
-  background: lightgrey;
-  height: 200px;
-  text-align: center; }
-
 .footer {
   position: absolute;
   text-align: center;
@@ -678,6 +644,13 @@ th {
   margin: 0px;
   margin-bottom: -10px;
   margin-left: 30%; }
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -814,10 +787,159 @@ figure.effect-lily:hover p {
   transition-delay: 0.05s;
   transition-duration: 0.35s; }
 
+form {
+  margin: 0 auto;
+  text-align: center; }
+
 .text-input {
   margin: 25px auto; }
 
 .text-label {
+  text-align: center; }
+
+form {
+  text-align: center;
+  padding: 50px; }
+
+#submit {
+  color: #f2f2f2;
+  font-size: 20px;
+  margin: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: pink;
+  /* For browsers that do not support gradients */ }
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top; }
+
+.input__field {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */ }
+
+#textarea {
+  height: 175px;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom: 0px solid black;
+  bottom: 17px; }
+
+.input__field:focus {
+  outline: none; }
+
+.input__label {
+  display: inline-block;
+  float: right;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: .65em 0;
+  width: 100%; }
+
+.input--effect {
+  overflow: hidden; }
+
+.input__field--effect {
+  margin-top: 4em;
+  padding-bottom: 1.6em;
+  font-size: 17px;
+  width: 100%;
+  background: transparent; }
+
+.input__label--effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.25em;
+  width: 100%;
+  height: calc(100% - 1em);
+  text-align: left;
+  pointer-events: none; }
+
+.input__label-content--effect {
+  position: absolute; }
+
+.input__label--effect::before,
+.input__label--effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 1px solid black; }
+
+.input__label--effect::after {
+  margin-top: 2px;
+  border-bottom: 4px solid red;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.3s; }
+
+.input__label--effect-color-1::after {
+  border-color: pink; }
+
+.input__field--effect:focus + .input__label--effect::after,
+.input--filled .input__label--effect::after {
+  transform: translate3d(0, 0, 0); }
+
+#thankyoumsg {
+  margin: 0 auto;
+  text-align: center; }
+
+#mini-title2 {
+  margin-top: 30vh; }
+
+.about-main {
+  padding: 50px; }
+
+.circle-container {
+  width: 100%; }
+
+.circle-pic {
+  height: 200px;
+  width: 200px;
+  background: pink;
+  border-radius: 150px;
+  margin: 0 auto; }
+
+.about-txt {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: justify; }
+
+.social-media-about ul {
+  list-style: none;
+  text-align: center; }
+
+.social-media-about a {
+  color: #444;
+  padding: 15px;
+  font-size: 25px; }
+
+.work-main {
+  padding: 100px;
+  overflow: hidden; }
+
+.work-box {
+  background: lightgrey;
+  height: 200px;
   text-align: center; }
 
 @media only screen and (max-width: 1047px) {
