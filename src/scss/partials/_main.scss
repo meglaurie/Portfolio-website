@@ -5,7 +5,7 @@
 
 .main-container{
   width: 60%;
-  padding-left: 80px;
+  padding-left: 105px;
   // margin: 0 auto;
 }
 .secondary-parallax{
@@ -16,13 +16,13 @@
   margin-right: -30px;
 }
 
-.sub-section{
-  // padding: 25px;
-  text-align: center;
-  background: grey;
-  height: 33.3vh;
-  width: 104%;
-}
+// .sub-section{
+//   // padding: 25px;
+//   text-align: center;
+//   background: grey;
+//   height: 33.3vh;
+//   width: 104%;
+// }
 
 .skills{
   background: lightgrey;
@@ -53,7 +53,7 @@
   width: 60%;
   display: block;
   margin: 0 auto;
-  padding: 25px;
+  padding: 40px;
 }
 
 .social-media-about{
@@ -61,7 +61,7 @@
   a{
     color:#444;
     padding: 15px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .work-main{
@@ -72,7 +72,4 @@
   background: lightgrey;
   height: 200px;
   text-align: center;
-}
-.formdiv{
-  margin-left: 50%;
 }

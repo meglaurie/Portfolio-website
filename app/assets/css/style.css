@@ -415,7 +415,7 @@ th {
 .rw-wrapper {
   width: 90%;
   position: relative;
-  padding: 10px;
+  padding: 10px 0px;
   display: inline-block; }
 
 .rw-sentence {
@@ -498,33 +498,32 @@ th {
     font-size: 20px; } }
 
 .parallax-window {
-  height: 100vh; }
+  height: 100vh;
+  background-image: cover; }
   .parallax-window h1 {
     font-family: "Special Elite", sans-serif; }
   .parallax-window .logo {
-    height: 70px;
-    float: left; }
+    height: 50px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 105px; }
   .parallax-window .header-title {
     font-size: 45px;
-    padding-top: 30px;
-    text-align: center; }
+    padding-top: 30px; }
   .parallax-window .header-subtitle {
     width: 100%;
-    margin: 25px;
-    padding-left: 10%; }
+    padding-top: 10px; }
   .parallax-window .header-text {
     font-size: 16px;
     width: 100%;
-    padding: 25px;
-    padding-left: 16%; }
+    padding-top: 25px; }
   .parallax-window .social-media {
     width: 100%;
-    padding-left: 16%;
     padding-top: 25px;
     font-size: 25px; }
     .parallax-window .social-media a {
       color: #444;
-      padding: 15px; }
+      padding-right: 15px; }
 
 .parallax-window::after {
   display: block;
@@ -552,22 +551,25 @@ th {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: whitesmoke;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center; }
+  .sidenav ul {
+    list-style: none;
+    padding: 0px; }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 0px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #444;
   display: block;
   transition: 0.3s; }
 
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: #000; }
 
 .sidenav .closebtn {
   position: absolute;
@@ -617,19 +619,13 @@ th {
 
 .main-container {
   width: 60%;
-  padding-left: 80px; }
+  padding-left: 105px; }
 
 .secondary-parallax {
   max-height: 100vh; }
 
 .col-lg-8 {
   margin-right: -30px; }
-
-.sub-section {
-  text-align: center;
-  background: grey;
-  height: 33.3vh;
-  width: 104%; }
 
 .skills {
   background: lightgrey; }
@@ -657,14 +653,14 @@ th {
   width: 60%;
   display: block;
   margin: 0 auto;
-  padding: 25px; }
+  padding: 40px; }
 
 .social-media-about {
   padding-left: 43%; }
   .social-media-about a {
     color: #444;
     padding: 15px;
-    font-size: 16px; }
+    font-size: 20px; }
 
 .work-main {
   padding: 100px;
@@ -674,12 +670,6 @@ th {
   background: lightgrey;
   height: 200px;
   text-align: center; }
-
-.formdiv {
-  margin-left: 50%; }
-
-footer {
-  background: none; }
 
 .footer {
   position: absolute;
@@ -730,7 +720,8 @@ footer {
   text-align: center;
   cursor: pointer;
   margin: 0px;
-  height: 33.3vh; }
+  height: 33.3vh;
+  width: 100%; }
 
 .grid figure img {
   position: relative;
@@ -782,7 +773,7 @@ figure.effect-lily img {
   max-width: none;
   width: calc(100% + 75px);
   height: 33.3vh;
-  opacity: 0.7;
+  opacity: 1;
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-40px, 0, 0); }
 
@@ -808,7 +799,9 @@ figure.effect-lily p {
   opacity: 0;
   transition: opacity 0.2s, transform 0.35s; }
 
-figure.effect-lily:hover img,
+figure.effect-lily:hover img {
+  opacity: 0.7; }
+
 figure.effect-lily:hover p {
   opacity: 1; }
 
@@ -820,6 +813,12 @@ figure.effect-lily:hover p {
 figure.effect-lily:hover p {
   transition-delay: 0.05s;
   transition-duration: 0.35s; }
+
+.text-input {
+  margin: 25px auto; }
+
+.text-label {
+  text-align: center; }
 
 @media only screen and (max-width: 1047px) {
   .menu {

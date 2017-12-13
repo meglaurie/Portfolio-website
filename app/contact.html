@@ -78,31 +78,31 @@
       <div class="wrapper">
         <div class="formdiv">
         <form action="mail.php" method="post">
-          <span class="input input--effect">
-           <input class="input__field input__field--effect" type="text" id="input-4" required/>
-           <label class="input__label input__label--effect input__label--effect-color-1" for="input-4">
-             <span class="input__label-content input__label-content--hoshi">Name</span>
+          <span class="">
+           <input class="text-input" type="text"  required/>
+           <label class="text-input" for="">
+             <span class="text-label">Name</span>
+           </label>
+         </span>
+         <br>
+         <span class="">
+           <input class="text-input" type="email" name="name" required/>
+           <label class="text-input" name="email" for="">
+             <span class="text-label">Email</span>
            </label>
          </span>
          <br>
          <span class="input input--effect">
-           <input class="input__field input__field--effect" type="email" name="name" id="input-4" required/>
-           <label class="input__label input__label--effect input__label--effect-color-1" name="email" for="input-4">
-             <span class="input__label-content input__label-content--hoshi">Email</span>
-           </label>
-         </span>
-         <br>
-         <span class="input input--effect">
-           <textarea id="textarea" class="input__field input__field--effect" type="text" name="message" id="input-4" required></textarea>
-           <label class="input__label input__label--effect input__label--effect-color-1" for="input-4">
-             <span class="input__label-content input__label-content--effect">Message</span>
+           <textarea id="textarea" class="text-input" type="text" name="message" required></textarea>
+           <label class="text-input" for="">
+             <span class="text-label">Message</span>
            </label>
          </span>
          <br>
           <input id="submit" type="submit" name="" value="Submit">
-          <br>
-          <a id="privacyP" href="privacypolicy.html">Privacy Poliicy</a>
         </form>
+        </div>
+
         </div>
 
 
@@ -140,7 +140,7 @@
     </script>
     <script>
       function openNav() {
-          document.getElementById("mySidenav").style.width = "100%";
+          document.getElementById("mySidenav").style.width = "30%";
       }
 
       function closeNav() {

@@ -40,7 +40,7 @@
 .rw-wrapper{
   width: 90%;
   position: relative;
-  padding: 10px;
+  padding: 10px 0px;
   display: inline-block;
 }
 .rw-sentence{
@@ -149,14 +149,18 @@
 .parallax-window {
   height: 100vh;
   // min-height: 75vh;
+  background-image: cover;
+
 
   h1{
     font-family: $font1;
   }
 
 .logo {
-  height:70px;
+  height:50px;
   float: left;
+  margin-top: 35px;
+  margin-left: 105px;
   a {
   // height:75px;
   // background-image: url('../img/logo.png');
@@ -172,33 +176,24 @@
   font-size: 45px;
   // padding-left: 100px;
   padding-top: 30px;
-  text-align: center;
-
 }
 .header-subtitle{
   width: 100%;
-  margin: 25px;
-  // text-align: center;
-  padding-left: 10%;
+  padding-top: 10px;
 }
 .header-text{
   font-size: 16px;
   width: 100%;
-  padding: 25px;
-  padding-left: 16%;
-
-  // text-align: center;
+  padding-top: 25px;
 }
 
 .social-media{
   width: 100%;
-  padding-left: 16%;
   padding-top: 25px;
-  // text-align: center;
   font-size: 25px;
   a{
     color:#444;
-    padding: 15px;
+    padding-right: 15px;
   }
 }
 

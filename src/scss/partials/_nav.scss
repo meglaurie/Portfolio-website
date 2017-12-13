@@ -22,25 +22,29 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: whitesmoke;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align:center;
+  ul{
+    list-style: none;
+    padding: 0px;
+  }
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 0px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #444;
   display: block;
   transition: 0.3s;
 
 }
 
 .sidenav a:hover{
-  color: #f1f1f1;
+  color: #000;
 }
 
 .sidenav .closebtn {
